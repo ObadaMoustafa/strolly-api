@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "rewrites": [{ "source": "/(.*)", "destination": "/" }],
+  "routes": [{ "source": "/(.*)", "destination": "/" }],
   "builds": [
     {
       "src": "./src/index.js",
