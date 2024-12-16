@@ -23,6 +23,7 @@ app.use(cors());
  * We use /api/ at the start of every route!
  * As we also host our client code on heroku we want to separate the API endpoints.
  */
+app.get("/", (req, res) => res.send("Express on Vercel"));
 app.use("/api/user", userRouter);
 app.use("/api/centers", centersRouter);
 app.use("/api/strollerTypesInfo", strollersTypesRouter);
